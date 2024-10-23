@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.hero-section{
+    height: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.summary{
+    height: 150px;
+    background-color: whitesmoke;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.skill{
+    height: 300px;
+    background-color: whitesmoke; 
+    margin-top: 6px;
+    display: flex;
+    justify-content:space-evenly ;
+}
