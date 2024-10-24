@@ -12,13 +12,13 @@
    
 }
 .summary{
-    height: 200px;
+    height: auto;
     background-color: whitesmoke;
     margin-top: 6px;
    
 }
 .skill{
-    height: 400px;
+    height: auto;
     background-color: whitesmoke; 
     width: 100%;
     margin-top: 5px;
@@ -28,4 +28,46 @@
     width: 3rem;
     height: 3rem;
     border-radius: .75rem;
+}
+.outer-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em ;
+}
+.box{
+   height: auto;
+   width: 300px;
+   background-color: silver;
+   padding: 10px;
+   border-radius: 8px;
+}
+.contact{
+    margin-top: 6px ;
+    height: auto;
+    background-color: #F5F5F7;
+
+}
+
+.info a{
+     color: black;
+     margin-left: 5px ;
+}
+@media (max-width:500px){
+    .hero-section{
+        display: block;
+        height: auto;
+    }
+    .profile > img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .profile{
+        text-align: center;
+        padding: 8px;
+    }
+    .box{
+        width: 200px;
+    }
+
 }
