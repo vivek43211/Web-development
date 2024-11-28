@@ -56,15 +56,15 @@ else{
 }
 
 // method 2 
-let randomno1 = Math.floor(Math.random() * 6) + 1;
- let randomdiceimage = "dice"+randomno1+".png";
- let randomdiceimagesoruce = "./images/"+randomdiceimage;
- let img1 = document.querySelector(".img1")
- img1.setAttribute("src",randomdiceimagesoruce)
+// let randomno1 = Math.floor(Math.random() * 6) + 1;
+//  let randomdiceimage = "dice"+randomno1+".png";
+//  let randomdiceimagesoruce = "./images/"+randomdiceimage;
+//  let img1 = document.querySelector(".img1")
+//  img1.setAttribute("src",randomdiceimagesoruce)
 
- let randomno2 = Math.floor(Math.random() * 6) + 1;
- let randomdiceimage2 = "dice"+randomno2+".png";
- let randomdiceimagesoruce2 = "./images/"+randomdiceimage2;
- let img2 = document.querySelector(".img2")
- img1.setAttribute("src",randomdiceimagesoruce2)
+//  let randomno2 = Math.floor(Math.random() * 6) + 1;
+//  let randomdiceimage2 = "dice"+randomno2+".png";
+//  let randomdiceimagesoruce2 = "./images/"+randomdiceimage2;
+//  let img2 = document.querySelector(".img2")
+//  img1.setAttribute("src",randomdiceimagesoruce2)
 
