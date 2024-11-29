@@ -8,12 +8,14 @@ for (let i = 0; i < numberbutton; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var buttoninnerhtml = this.innerHTML;
        MakeSound(buttoninnerhtml);
+       AddAmination(buttoninnerhtml);
 
         })
     }
 
 document.addEventListener("keypress", function (event) {
     MakeSound(event.key);
+    AddAmination(event.key);
     })
 
 function MakeSound (event){
@@ -53,4 +55,11 @@ function MakeSound (event){
         default:
             console.log("no valid input");
     }
+}
+function AddAmination(currentkey){
+let activekey = document.querySelector("."+currentkey) 
+activekey.classList.add("pressed")
+setTimeout(function(){
+    activekey.classList.remove("pressed")
+},100)
 }
