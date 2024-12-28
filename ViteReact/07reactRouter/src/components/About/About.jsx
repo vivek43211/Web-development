@@ -7,7 +7,7 @@ export default function About() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
                         <img
-                            src="https://www.istockphoto.com/photo/a-view-up-into-the-trees-direction-sky-gm1317323736-404791748"
+                            src="https://img.lovepik.com/element/40148/2908.png_300.png"
                             alt="image"
                         />
                     </div>
@@ -16,13 +16,18 @@ export default function About() {
                             React development is carried out by passionate developers
                         </h2>
                         <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                        React development is carried out by passionate developers who strive to create innovative, user-friendly, and scalable web applications.
+                         Every line of code is written with dedication, ensuring that each component contributes to a seamless and dynamic user 
+                         experience. The flexibility and power of React enable developers to turn complex ideas into interactive and functional 
+                         realities.
                         </p>
                         <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                        With a strong focus on collaboration and continuous learning, React developers constantly push boundaries,
+                         staying updated with the latest advancements in the field. Their commitment to excellence drives the
+                          creation of intuitive interfaces and robust architectures, making React one of the most beloved 
+                          frameworks in the development community.
+
+
                         </p>
                     </div>
                 </div>
