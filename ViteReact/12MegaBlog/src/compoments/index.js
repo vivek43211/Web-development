@@ -7,7 +7,9 @@ import Button from "./Button";
 import Input from "./Input";
 import Select from "./Select";
 import PostCard from "./PostCard";
-
+import RTE from "./RTE";
+import Protected from "./AuthLayout";
+import PostCard from "./PostCard";
 
 export {
     Header,
@@ -18,6 +20,9 @@ export {
     Button,
     Input,
     Select,
+    PostCard,
+    Protected,
+    RTE,
     PostCard
 
 }
