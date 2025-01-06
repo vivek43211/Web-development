@@ -8,7 +8,6 @@ export class Service{
 
     constructor(){
         this.client
-                   .setEndpoint(conf.appwriteUrl)
                    .setProject(conf.appwriteProjectId);
          this.databases = new Databases(this.client)
          this.bucket = new Storage(this.client)          
@@ -36,7 +35,7 @@ export class Service{
     }
     async updatePost(slug , {title , content , featuredImage , status}){
         try {
-            return this.databases.updateDocument(
+            return  await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
@@ -129,10 +128,10 @@ export class Service{
     //     )
     // }
  
-    getfileperview (fileId){
+    getFilePreview (fileId){
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
-            fileId,
+            fileId
         )
     }
 

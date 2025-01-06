@@ -7,7 +7,7 @@ import appwriteService from "../../appwrite/config";
 
 //This method will watch specified inputs and return their values.  = watch 
 
-export default function PostForm({ post }) {
+export default function PostForm({ post = {} }) {
   const navigate = useNavigate();
   const { register, handleSubmit, setValue, getValues, control, watch } = useForm({
     defaultValues: {
@@ -24,13 +24,13 @@ export default function PostForm({ post }) {
     if (post) {
       const file = data.image[0] ? await appwriteService.uploadFile(data.image[0]) : null;
 
-      if (file) {
+      if (file && post?.featuredImage ) {
         appwriteService.deleteFile(post.featuredImage);
       }
 
       const dbpost = await appwriteService.updatePost(post.$id, {
         ...data,
-        featuredImage: file ? file.$id : undefined
+        featuredImage: file ? file.$id : post.featuredImage,
       });
 
       if (dbpost) {
@@ -43,16 +43,18 @@ export default function PostForm({ post }) {
     else {
       const file = await appwriteService.updatePost(data.image[0]);
 
-      if (file) {
-        const fileid = file.$id;
-        data.featuredImage = fileid;
+      if (file && file.$id) {
+        const fileId = file.$id;
+        data.featuredImage = fileId;
         const dbpost = await appwriteService.CreatePost({
           ...data,
           userId: userData.$id,
         })
         if (dbpost) {
           navigate(`/post/${dbpost.$id}`)
-        }
+        }else {
+          console.error("File upload failed.");
+      }
 
       }
     }

@@ -1,15 +1,15 @@
 import React from 'react'
-import {useDisptach } from 'react-dom'
+import {useDispatch } from 'react-redux'
 import authservice from '../../appwrite/Auth'
 import {logout} from '../../store/authSlice'
 
 function LogoutBtn() {
-    const disptach = useDisptach()
+    const disptach = useDispatch()
 
     const logouthandle = ()=>{
-        authservice.logout().then(
-          disptach(logout()) // logout is as a promise
-        )
+        authservice.logout().then(() => {
+          disptach(logout())
+      })
     }
   return (
     <button className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full' onClick={logouthandle}>
