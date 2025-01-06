@@ -6,10 +6,12 @@ import Logo from "./logo";
 import Button from "./Button";
 import Input from "./Input";
 import Select from "./Select";
-import PostCard from "./PostCard";
+import PostCard from "../compoments/PostCard";
 import RTE from "./RTE";
 import Protected from "./AuthLayout";
-import PostCard from "./PostCard";
+import Signup from './Signup'
+import PostForm from '../compoments/post-form/PostForm'
+import Login from "./Login";
 
 export {
     Header,
@@ -23,6 +25,10 @@ export {
     PostCard,
     Protected,
     RTE,
-    PostCard
+    Signup,
+    PostForm,
+    Login
+
+
 
 }

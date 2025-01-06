@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDisptach } from 'react-dom'
-import authservice from '../../conf/appwrite/config'
+import authservice from '../../appwrite/Auth'
 import {logout} from '../../store/authSlice'
 
 function LogoutBtn() {
